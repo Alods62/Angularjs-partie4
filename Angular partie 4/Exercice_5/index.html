@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <button ng-click="texte = false">Afficher</button> <!--on utilise la directive ng-click, quand on clique dessus on attribue le booléen false à la valeur texte-->
+      <button ng-click="texte = true">Cacher</button> <!--idem false à la valeur texte-->
+
+      <p ng-hide="texte">Coucou je suis le paragraphe.</p> <!--directive hide pour savoir si on cache le texte --> 
+    </div>
+  </body>
+</html>

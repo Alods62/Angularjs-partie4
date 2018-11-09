@@ -2,13 +2,13 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>Exercice 3</title>
+    <title>Exercice 4</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body ng-controller="VoitureCtrl">
     <ul>
-      <li ng-repeat="voiture in voitures | voitureVerte">
+      <li ng-repeat="voiture in voitures | voitureVerte"> //on répète la directive tant qu'il reste des éléments voitures dans le tableau voitures
         {{voiture}}
       </li>
     </ul>

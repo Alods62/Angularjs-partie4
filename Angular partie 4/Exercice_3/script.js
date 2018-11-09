@@ -1,9 +1,9 @@
 var testApp = angular.module('app',[]);
 
 testApp.controller('VoitureCtrl', function($scope, $http) {
-  $http.get('voiture.json')
-        .then(function(res){
-          $scope.voitures = res.data;
+  $http.get('voiture.json') // $ pour faire appel aux services angular js , $http.get pour faire une requête serveur, ici récup notre fichier json
+        .then(function(test){ // .then la fonction se lance en cas de réussite du http get
+          $scope.voitures = test.data; // les données du json sont mise dans le tableau voitures
         });
 
 });
